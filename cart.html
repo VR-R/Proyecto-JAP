@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <span id="nombre"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="cart.html">Mi carrito</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" id="cerrar">Cerrar sesion</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container" >
+    <h2 class ="text-center">Carritos de compras</h2>
+    <h4>Artículos a comprar</h4>
+    <table class="table">
+      <tr>
+        <th></th>
+        <th>Nombre</th>
+        <th> Costo</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td id="imag"></td>
+        <td id="name"></td>
+        <td id="cost"></td>
+        <td><input type="number" id="cant"></td>
+        <td id="sub"></td>
+      </tr>
+    </table>
+
+  <h4>Tipo de envio</h4>
+  <div class="d-block my-3">
+    <div class="custom-control custom-radio">
+      <input id="goldradio" name="publicationType" type="radio" class="custom-control-input" checked=""
+        required="">
+      <label class="custom-control-label" for="goldradio">Premium 2 a 5 días(15%)</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input id="premiumradio" name="publicationType" type="radio" class="custom-control-input" required="">
+      <label class="custom-control-label" for="premiumradio">Express 5 a 8 días(7%)</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input id="standardradio" name="publicationType" type="radio" class="custom-control-input" required="">
+      <label class="custom-control-label" for="standardradio">Standard 12 a 15 días(5%)</label>
+    </div>
+  </div>
+  <h4>Dirección de envio</h4>
+  <div class="row">
+    <label for="productName">Calle</label>
+    <input type="text" class="form-control" value="">
+    <div class="col">
+    <label for="productName">Número</label>
+    <input type="number" class="form-control" value="">
+    </div>
+    <div class="col">
+    <label for="productName">Esquina</label>
+    <input type="text" class="form-control" value="">
+    </div>
+  </div>
+  <hr>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>
